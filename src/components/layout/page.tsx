@@ -6,10 +6,10 @@ interface PageProps {
 }
 const Page: React.FC<PageProps> = ({ children }) => {
   return (
-    <div>
+    <div className="p-5 bg-bg text-white h-screen flex flex-col">
       <Topbar />
 
-      <div className="flex">
+      <div className="grid grid-cols-[200px_1fr] gap-10 mt-10 flex-1 min-h-0">
         <Sidebar />
         {children}
       </div>
